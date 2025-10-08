@@ -11,12 +11,16 @@
         const person={
             "Name":"shekh khwaja",
             "age":21,
-            "salary":34000.25
-        }
+            "salary":34000.25,
+            information:function()
+            {
+                return("Name="+this.Name+"Age="+this.age+" Salary="+this.salary);
+            }
+        };
         document.writeln("Name="+person["Name"]+"<br>");
         document.writeln("age="+person["age"]+"<br>");
         document.writeln("salary="+person["salary"]+"<br>");
-    
+        document.writeln(person.information());
 
         
     </script>

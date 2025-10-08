@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun()
+        {
+            let day=parseInt(document.getElementById("tx1").value);
+            switch(day)
+            {
+                case 1:
+                document.getElementById("demo").innerHTML="monday";
+                break;
+                case 2:
+                document.getElementById("demo").innerHTML="tuesday";
+                break;
+                case 3:
+                document.getElementById("demo").innerHTML="wednesday";
+                break;      
+                case 4:
+                document.getElementById("demo").innerHTML="thursday";
+                break;
+                case 5:
+                document.getElementById("demo").innerHTML="friday";
+                break;
+                case 6:
+                document.getElementById("demo").innerHTML="saturday";
+                break;
+                case 7:
+                document.getElementById("demo").innerHTML="sunday";
+                break;
+                default:
+                document.getElementById("demo").innerHTML="invalid input";
+            }
+        }
+    </script>
+</head>
+<body>
+    <pre>
+        Enter a Day:- <input type="text" id="tx1">
+        <input type="button" onclick="fun()" value="click here">
+        <span id="demo"></span>
+    </pre>
+</body>
+</html>
