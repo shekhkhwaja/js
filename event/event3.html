@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun()
+        {
+            document.getElementById("demo").innerHTML="you click the button";
+
+        }
+        function fun1()
+        {
+            document.getElementById("demo").innerHTMl="you have to Entered paragraph"
+        }
+        function fun2()
+        {
+            document.getElementById("demo").innerHTML="you are out of paragraph";
+
+        }
+        function fun4()
+        {
+              let city=document.getElementById("se").value;
+              document.getElementById("demo").innerHTML="your city is" +city;
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="fun()" value="Click">
+    <p onmouseenter="fun1" onmouseout="fun2()">
+
+    
+    Hi i am student of B.tech
+    </p>
+    <select onchange="fun4()" id="se">
+        <option> Select City.......</option>
+        <option>Jabalpur</option>
+        <option>Bhopal</option>
+        <option>Indore</option>
+        <option>Badlapur</option>
+    </select>
+    <p id="demo"></p>
+</body>
+</html>

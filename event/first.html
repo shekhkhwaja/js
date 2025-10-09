@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun()
+        {
+            document.getElementById("demo").innerHTML="you click the button";
+
+        }
+        function fun1()
+        {
+            document.getElementById("demo").innerHTML="you have to Entered paragraph";
+        }
+        function fun2()
+        {
+            document.getElementById("demo").innerHTML="you have to out paragraph"
+        }
+    </script>
+</head>
+<body>
+  <input type="button" onclick="fun()" value="Click">
+  <p onmouseenter="fun1()" onmouseout="fun2()">
+    Hi I am Student of B.tech
+  </p>
+  <p id="demo"></p>
+</body>
+</html>
